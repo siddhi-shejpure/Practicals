@@ -1,0 +1,78 @@
+set A:
+-- Create hospitals table
+CREATE TABLE hospitals (
+    hosp_id INT AUTO_INCREMENT PRIMARY KEY,
+    hosp_name VARCHAR(255) NOT NULL,
+    hosp_city VARCHAR(255)
+);
+
+-- Create doctors table
+CREATE TABLE doctors (
+    doc_id INT AUTO_INCREMENT PRIMARY KEY,
+    doc_name VARCHAR(255) NOT NULL,
+    address VARCHAR(255),
+    city VARCHAR(255),
+    area VARCHAR(255),
+    hosp_id INT,
+    FOREIGN KEY (hosp_id) REFERENCES hospitals(hosp_id)
+);
+
+-- Example data for hospitals
+INSERT INTO hospitals (hosp_name, hosp_city) VALUES
+('City Hospital', 'New York'),
+('Sunshine Hospital', 'Los Angeles');
+
+-- Example data for doctors
+INSERT INTO doctors (doc_name, address, city, area, hosp_id) VALUES
+('Dr. John Doe', '123 Main St', 'New York', 'Cardiology', 1),
+('Dr. Jane Smith', '456 Oak St', 'Los Angeles', 'Neurology', 2);
+
+-------------------------------------------------------------------------------------------------------
+set B:
+-- Create Movie table
+CREATE TABLE Movie (
+    movie_no INT AUTO_INCREMENT PRIMARY KEY,
+    movie_name VARCHAR(255) NOT NULL,
+    release_year INT
+);
+
+-- Create Actor table
+CREATE TABLE Actor (
+    actor_no INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+-- Create Relationship table (Movie_Actor)
+CREATE TABLE Movie_Actor (
+    movie_no INT,
+    actor_no INT,
+    FOREIGN KEY (movie_no) REFERENCES Movie(movie_no),
+    FOREIGN KEY (actor_no) REFERENCES Actor(actor_no),
+    PRIMARY KEY (movie_no, actor_no)  -- Composite primary key
+);
+
+INSERT INTO Movie (movie_name, release_year) VALUES
+('The Shawshank Redemption', 1994),
+('The Godfather', 1972),
+('The Dark Knight', 2008),
+('Forrest Gump', 1994),
+('Inception', 2010);
+
+INSERT INTO Actor (name) VALUES
+('Morgan Freeman'),
+('Marlon Brando'),
+('Christian Bale'),
+('Tom Hanks'),
+('Leonardo DiCaprio');
+
+INSERT INTO Movie_Actor (movie_no, actor_no) VALUES
+(1, 1), -- Morgan Freeman in 'The Shawshank Redemption'
+(2, 2), -- Marlon Brando in 'The Godfather'
+(3, 3), -- Christian Bale in 'The Dark Knight'
+(4, 4), -- Tom Hanks in 'Forrest Gump'
+(5, 5), -- Leonardo DiCaprio in 'Inception'
+(1, 4), -- Tom Hanks in 'The Shawshank Redemption'
+(3, 1), -- Morgan Freeman in 'The Dark Knight'
+(4, 1), -- Morgan Freeman in 'Forrest Gump'
+(2, 3), -- Christian Bale in 'The Godfather'
+(5, 2); -- Marlon Brando in 'Inception'

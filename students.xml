@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<university>
+    <department name="Computer Science">
+        <student>
+            <id>101</id>
+            <name>Alice Johnson</name>
+            <age>21</age>
+            <course>B.Tech</course>
+            <enrollment_year>2022</enrollment_year>
+        </student>
+    <student><id>102</id><name>rohan</name><age>25</age><course>bcs</course><enrollment_year>2023</enrollment_year></student></department>
+    <department name="Mechanical Engineering">
+        <student>
+            <id>102</id>
+            <name>Bob Smith</name>
+            <age>22</age>
+            <course>B.E.</course>
+            <enrollment_year>2021</enrollment_year>
+        </student>
+    </department>
+</university>

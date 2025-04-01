@@ -1,0 +1,30 @@
+Category: TECHNICAL
+
+Title: Learning Python
+Author: Mark Lutz
+Year: 2021
+
+Title: Effective Java
+Author: Joshua Bloch
+Year: 2020
+
+Category: COOKING
+
+Title: The Joy of Cooking
+Author: Irma S. Rombauer
+Year: 2018
+
+Title: Salt, Fat, Acid, Heat
+Author: Samin Nosrat
+Year: 2019
+
+Category: YOGA
+
+Title: Light on Yoga
+Author: B.K.S. Iyengar
+Year: 2015
+
+Title: The Heart of Yoga
+Author: T. K. V. Desikachar
+Year: 2017
+

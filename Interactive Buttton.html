@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Interactive Button</title>
+        <style>
+            #myButton{
+                padding :10px 20px;
+                font-size : 16px;
+                cursor : pointer;
+                transition : background-color 0.3s;
+            }
+        </style>
+    </head>
+    <body>
+        <button id = "myButton"
+        onclick = "changeText()"
+        onmouseover = "changeColor(this)"
+        onmouseout = "revertColor(this)">
+        Click Me
+        </button>
+        <script>
+            function changeText(){
+                var button = document.getElementById("myButton");
+                button.innerHTML="You clicked me!";
+            }
+            function changeColor(button){
+                button.style.backgroundColor="red";
+                button.style.color="yellow";
+            }
+            function revertColor(button){
+                button.style.backgroundColor="";
+                button.style.color="";
+            }
+        </script>
+    </body>
+</html>

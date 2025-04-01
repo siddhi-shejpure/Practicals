@@ -1,0 +1,38 @@
+<ABC_BOOKSTORE>
+    <TECHNICAL>
+        <BOOK>
+            <BOOK_PUB_YEAR>2021</BOOK_PUB_YEAR>
+            <BOOK_TITLE>Learning Python</BOOK_TITLE>
+            <BOOK_AUTHOR>Mark Lutz</BOOK_AUTHOR>
+        </BOOK>
+        <BOOK>
+            <BOOK_PUB_YEAR>2020</BOOK_PUB_YEAR>
+            <BOOK_TITLE>Effective Java</BOOK_TITLE>
+            <BOOK_AUTHOR>Joshua Bloch</BOOK_AUTHOR>
+        </BOOK>
+    </TECHNICAL>
+    <COOKING>
+        <BOOK>
+            <BOOK_PUB_YEAR>2018</BOOK_PUB_YEAR>
+            <BOOK_TITLE>The Joy of Cooking</BOOK_TITLE>
+            <BOOK_AUTHOR>Irma S. Rombauer</BOOK_AUTHOR>
+        </BOOK>
+        <BOOK>
+            <BOOK_PUB_YEAR>2019</BOOK_PUB_YEAR>
+            <BOOK_TITLE>Salt, Fat, Acid, Heat</BOOK_TITLE>
+            <BOOK_AUTHOR>Samin Nosrat</BOOK_AUTHOR>
+        </BOOK>
+    </COOKING>
+    <YOGA>
+        <BOOK>
+            <BOOK_PUB_YEAR>2015</BOOK_PUB_YEAR>
+            <BOOK_TITLE>Light on Yoga</BOOK_TITLE>
+            <BOOK_AUTHOR>B.K.S. Iyengar</BOOK_AUTHOR>
+        </BOOK>
+        <BOOK>
+            <BOOK_PUB_YEAR>2017</BOOK_PUB_YEAR>
+            <BOOK_TITLE>The Heart of Yoga</BOOK_TITLE>
+            <BOOK_AUTHOR>T. K. V. Desikachar</BOOK_AUTHOR>
+        </BOOK>
+    </YOGA>
+</ABC_BOOKSTORE>

@@ -1,0 +1,5 @@
+this is the first file and it contents are :
+hi
+hello 
+good afternoon 
+how areyou??

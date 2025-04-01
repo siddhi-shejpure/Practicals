@@ -1,0 +1,31 @@
+<WAREHOUSE>
+    <CATEGORY name="Electronics">
+        <PRODUCT>
+            <ID>101</ID>
+            <NAME>Smartphone</NAME>
+            <PRICE>500</PRICE>
+            <QUANTITY>50</QUANTITY>
+        </PRODUCT>
+        <PRODUCT>
+            <ID>102</ID>
+            <NAME>Laptop</NAME>
+            <PRICE>1000</PRICE>
+            <QUANTITY>30</QUANTITY>
+        </PRODUCT>
+    </CATEGORY>
+    
+    <CATEGORY name="Furniture">
+        <PRODUCT>
+            <ID>201</ID>
+            <NAME>Sofa</NAME>
+            <PRICE>300</PRICE>
+            <QUANTITY>20</QUANTITY>
+        </PRODUCT>
+        <PRODUCT>
+            <ID>202</ID>
+            <NAME>Dining Table</NAME>
+            <PRICE>600</PRICE>
+            <QUANTITY>15</QUANTITY>
+        </PRODUCT>
+    </CATEGORY>
+</WAREHOUSE>

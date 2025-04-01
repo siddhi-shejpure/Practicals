@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Create New Account</title>
+</head>
+<body>
+    <h1 style="text-align: center;">CREATE NEW ACCOUNT</h1>
+    <form>
+        <fieldset>
+            <legend>User Personal Information</legend>
+            <table>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="text" name="age" required></td>
+                </tr>
+                <tr>
+                    <td>Birthdate:</td>
+                    <td><input type="date" name="birthdate" required></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td>
+                        <select name="country" required>
+                            <option value="">Select</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Which of the following Operating System have you used:</td>
+                    <td>
+                        <input type="checkbox" name="os" value="Linux"> Linux<br>
+                        <input type="checkbox" name="os" value="Windows XP"> Windows XP<br>
+                        <input type="checkbox" name="os" value="Macintosh 8.0"> Macintosh 8.0
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
