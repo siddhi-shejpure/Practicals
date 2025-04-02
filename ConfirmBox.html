@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Confirm Box</title>
+    </head>
+    <body>
+        <h2>Item Management</h2>
+        <button id = "deleteBtn"> Delete Item</button>
+        <script>
+            document.getElementById("deleteBtn").onclick=function(){
+                var userConfirmation=window.confirm("Are you sure you want yo delete this item?");
+                if(userConfirmation){
+                    document.body.innerHTML+="<p>Item deleted.<p>";
+                }
+                else{
+                    document.body.innerHTML+="<p> Deletion Cancelled.<p>";
+                }
+            }
+        </script>
+    </body>
+</html>
